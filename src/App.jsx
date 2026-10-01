@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="container">
       <div className="header">
-        Header
+        Joaquin Manalastas - WMD-3A
       </div>
 
       <div className="mainContent">
