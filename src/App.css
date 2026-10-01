@@ -1,0 +1,103 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+}
+
+.container {
+  width: min(400px, calc(100vw - 24px));
+  margin: 33px auto 0;
+}
+
+.header {
+  display: grid;
+  place-items: center;
+  height: 39px;
+  background-color: #52cfe1;
+  margin-bottom: 4px;
+}
+
+.mainContent {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 4px;
+  height: 275px;
+  margin-bottom: 5px;
+}
+
+.sideColumn,
+.contentColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hero {
+  flex: 0.75;
+  background-color: #d9c9e4;
+  padding: 8px;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #9bc365;
+  padding: 8px;
+}
+
+.mainPanel {
+  flex: 2.3;
+  background-color: #ffca2f;
+  padding: 8px;
+}
+
+.extraContent {
+  flex: 1;
+  background-color: #888;
+  padding: 8px;
+}
+
+.mainNote {
+  margin-top: 4px;
+  font-size: 7px;
+  line-height: 1.2;
+}
+
+.relatedContent {
+  display: flex;
+  gap: 4px;
+  height: 67px;
+  margin-bottom: 5px;
+}
+
+.relatedImages {
+  display: grid;
+  place-items: center;
+  flex: 2.4;
+  background-color: #2cb776;
+}
+
+.relatedPost {
+  display: grid;
+  place-items: center;
+  flex: 1;
+  background-color: #f1c7dc;
+  padding: 8px;
+}
+
+.footer {
+  display: grid;
+  place-items: center;
+  height: 38px;
+  background-color: #ffa500;
+}
+
+@media (max-width: 560px) {
+  .container {
+    width: min(400px, calc(100vw - 24px));
+  }
+
+  .mainContent {
+    height: 275px;
+  }
+}

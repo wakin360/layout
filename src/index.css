@@ -1,0 +1,83 @@
+/* 1. Use a predictable box model for everything */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Smooth scrolling and text scale control */
+html {
+  -webkit-text-size-adjust: 100%;
+  color-scheme: light dark;
+}
+
+/* 4. Core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* 5. React root container setup & isolation */
+#root {
+  isolation: isolate;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 6. Media element defaults (prevents overflow and weird baseline gaps) */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 7. Inherit font styles for form inputs & buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 8. Make buttons feel like buttons out of the box */
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+/* 9. Prevent long strings from breaking layout */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 10. Clean link & list baselines */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
